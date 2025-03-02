@@ -1,0 +1,39 @@
+.vscode
+# Object files
+*.o
+*.ko
+*.obj
+*.elf
+
+# Precompiled Headers
+*.gch
+*.pch
+
+# Libraries
+*.lib
+*.a
+*.la
+*.lo
+
+# Shared objects
+*.so
+*.so.*
+*.dylib
+
+# Executables
+*.exe
+*.out
+*.app
+*.i*86
+*.x86_64
+*.hex
+router
+
+# Debug files
+*.dSYM/
+*.su
+
+# Project-specific files
+archive.zip
+hosts_output
+router_*
