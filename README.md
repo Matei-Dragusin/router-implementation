@@ -5,6 +5,7 @@ This project implements the dataplane of a router, handling packet processing, r
 ## Overview
 
 The router implementation includes:
+
 - IPv4 packet processing
 - Routing table lookup with binary search
 - ARP table management
@@ -22,7 +23,6 @@ The router implementation includes:
 
 ## Project Structure
 
-```
 .
 ├── router.c                  # Main router implementation
 ├── lib.c / lib.h             # Helper functions for networking
@@ -32,7 +32,6 @@ The router implementation includes:
 ├── Makefile                  # Build instructions
 ├── README.md                 # Project documentation
 └── arp_table.txt             # Static ARP table
-```
 
 ## Key Components
 
@@ -132,6 +131,7 @@ make run_router0
 ### IPv4 Forwarding
 
 When a router receives an IPv4 packet:
+
 1. Validates the checksum
 2. Checks if the TTL is greater than 1
 3. Decrements the TTL by 1
@@ -144,6 +144,7 @@ When a router receives an IPv4 packet:
 ### ICMP Message Generation
 
 The router generates ICMP messages in the following scenarios:
+
 - TTL exceeded (Type 11, Code 0)
 - Destination network unreachable (Type 3, Code 0)
 - Echo reply (Type 0, Code 0) in response to Echo request
