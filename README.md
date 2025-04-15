@@ -23,6 +23,7 @@ The router implementation includes:
 
 ## Project Structure
 
+```plaintext
 .
 ├── router.c                  # Main router implementation
 ├── lib.c / lib.h             # Helper functions for networking
@@ -32,6 +33,7 @@ The router implementation includes:
 ├── Makefile                  # Build instructions
 ├── README.md                 # Project documentation
 └── arp_table.txt             # Static ARP table
+```
 
 ## Key Components
 
